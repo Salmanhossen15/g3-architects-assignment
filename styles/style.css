@@ -9,7 +9,7 @@
 }
 
 body {
-
+    
     font-family: var(--primary-font);
 }
 
@@ -78,8 +78,16 @@ nav>ul {
     margin-top: 30px;
 }
 
+.banner {
+    /* margin: 50px 240px; */
+    display: flex;
+    justify-content: center;
+}
+
 .section-banner {
-    margin: 50px 240px;
+    width: auto;
+    padding-top: 50px;
+    padding-bottom: 40px;
 }
 
 .section-gallery {
@@ -186,8 +194,15 @@ nav>ul {
     padding-bottom: 10px;
 }
 
+
+    
+
 .last-button {
     margin: 0 800px;
+    position: absolute;
+    right: -130px;
+    bottom: -2360px;
+    
 
 }
 
@@ -287,18 +302,122 @@ nav>ul {
     padding: 39px 410px;
 }
 
-@media only screen and (max-width:668px) {
-   nav{
-    flex-direction: column;
-   }
-   .banner img{
-    width: 100%;
-    height: 100%;
-    
-   }
-   .section-gallery{
-    flex-direction: column;
-   }
-   
-   
+@media only screen and (max-width:688px) {
+    nav {
+        flex-direction: column;
+    }
+
+    .banner img {
+        width: 100%;
+        height: 100%;
+
+    }
+
+    .section-gallery {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .images {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin-left: 0px;
+        justify-items: center;
+    }
+
+    .features {
+        text-align: center;
+        margin: 0px;
+        padding: 0px;
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        margin: auto;
+    }
+
+    .container-1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .text-container {
+        margin-left: 0px;
+
+    }
+
+    .intro {
+        padding: 0 20px;
+    }
+
+    .achivment {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+    }
+
+    .logo {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+       
+    }
+
+    .Sponspors {
+        text-align: center;
+        margin-left: 0px;
+        
+    }
+
+    .Sponspors p {
+        margin: 0px;
+        width: 50%;
+
+    }
+
+    .footer {
+        width: 100%;
+        height: 100px;
+        background: #FFF4E7;
+        border-radius: 8px;
+        text-align: center;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 130px;
+        margin-bottom: 216px;
+    }
+
+    .footer-info {
+        margin: 0px;
+        padding: 0px;
+        padding-top: 40px;
+
+    }
+
+    .header-title {
+        text-align: center;
+    }
+
+    .header-items {
+        margin: 0px;
+        margin-top: 0px;
+    }
+
+    .button {
+        margin: 0px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .last-button {
+        margin: 0px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .Sponspors p {
+        margin: 0;
+        justify-items: center;
+
+
+    }
 }
